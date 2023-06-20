@@ -1,0 +1,147 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 574px;
+  padding: 32px;
+  margin-left: 50px;
+  width: 100%;
+  max-width: 546px;
+  border-radius: 10px;
+}
+
+.main-background {
+  padding: 48px;
+  height: 670px;
+  width: 100%;
+  background-image: url('../img/imagemprincipal2.jpg');
+  background-size: cover;
+}
+
+.main-title {
+  font-size: 50px;
+}
+
+.main-button {
+  background-color: black;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.main-text {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.profile-content {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  max-width: 1440px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.profile-title {
+  margin: 0;
+  font-size: 38px;
+}
+
+.profile-option {
+  display: flex;
+  margin-top: 48px;
+  max-height: 548px;
+  min-height: 548px;
+}
+
+.profile-image {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.profile-optionContent {
+  background-color: rgb(248, 249, 245);
+  padding: 32px;
+  min-width: 480px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0px 10px 10px 0px;
+  border: 8px solid black;
+  margin-left: 8px;
+}
+
+.profile-title {
+  margin: 0;
+}
+
+.profile-text {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.image-wrapper {
+  flex: 1 1 0%;
+  min-height: 548px;
+}
+
+@media screen and (max-width: 767px) {
+  .main-background {
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    background-image: none;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    height: fit-content;
+    margin: 0;
+    padding: 32px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .profile-optionContent {
+    min-width: initial;
+    max-width: none;
+  }
+
+
+
+
+  /* Style for the right bar */
+
+  .right-bar {
+    position: fixed;
+    top: 120px;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #eee;
+    transition: right 0.3s ease-in-out;
+  }
+
+  /* Style for the content inside the right bar */
+
+  .right-content {
+    padding: 20px;
+  }
+
+}

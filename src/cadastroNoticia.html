@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CadastroNoticia</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Formulario para adicionar noticia</h1>
+		<form>
+			<label for="tituloNoticia">Titulo:</label>
+			<input type="tituloNoticia" id="tituloNoticia" name="tituloNoticia" required>
+
+			<label for="linkNoticia">Link:</label>
+			<input type="linkNoticia" id="linkNoticia" name="linkNoticia" required>
+
+			<label for="imgNoticia">Link imagem Capa da notícia:</label>
+			<input type="imgNoticia" id="imgNoticia" name="imgNoticia" required>
+
+			<input id="cadastrarNoticiaBtn" type="submit" value="Cadastrar Noticia">
+		</form>
+		<button class="cancelBtn" id="cancelBtn">Cancelar</button>
+	</div>
+	<script src="./js/cadastroNoticia.js"></script>
+</body>
+</html>

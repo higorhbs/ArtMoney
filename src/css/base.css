@@ -1,0 +1,263 @@
+html,
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: #F3F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  left: 0px;
+  position: sticky;
+  right: 0px;
+  top: 0px;
+  z-index: 1100;
+  border-bottom: 1px solid rgba(217, 219, 208);
+  padding: 8px 0;
+}
+
+.header-title {
+  height: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+}
+
+.header-title:hover {
+  color: rgb(37, 37, 36);
+
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 95%;
+  padding: 8px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.content {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.base-content {
+  margin: 0 auto;
+}
+
+.content-text {
+  font-size: 1.8rem;
+}
+
+/*Css Footer*/
+
+.rodape {
+  bottom: 0;
+  width: 100%;
+  background-color: #F3F0F0;
+  padding: 20px;
+}
+
+.midias {
+  text-align: center;
+  padding: 5px;
+}
+
+.Copyright {
+  text-align: center;
+}
+
+.button {
+  padding: 12px 16px;
+  font-weight: 600;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#userName{
+  display: none;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.button--black {
+  color: black;
+
+}
+
+.navigation-list .button--login {
+
+  color: white;
+  background-color: rgb(37, 37, 36);
+  border-radius: 10px;
+}
+
+.button--login:hover {
+  background-color: rgb(51, 51, 51);
+}
+
+.button--black:disabled {
+  background-color: rgb(37, 37, 36);
+}
+
+.button--black:hover {
+  color: white;
+  background-color: rgb(37, 37, 36);
+  border-radius: 10px;
+}
+
+.button--nav {
+  margin-right: 8px;
+}
+
+.u-hideOnMobile {
+  display: initial;
+}
+
+.u-hideOnDesktop {
+  display: none;
+}
+
+.u-rowDesktop {
+  display: flex;
+}
+
+.base-title {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .u-hideOnMobile {
+    display: none;
+  }
+
+  .u-hideOnDesktop {
+    display: initial;
+  }
+
+  .u-rowDesktop {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+/* Style for the button */
+
+.right-button {
+  font-weight: 600;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-entrar {
+  text-align: center;
+}
+
+.imgPerfil:hover {
+  background-color: rgb(37, 37, 36);
+}
+
+/* Style for the right bar */
+.right-bar {
+  position: fixed;
+  top: 120px;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: #eee;
+  transition: right 0.3s ease-in-out;
+}
+
+/* Style for the content inside the right bar */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Style for the button inside RightBar*/
+.btnRightBar {
+
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnRightBar:hover {
+  background-color: rgb(37, 37, 36);
+}
+
+#btnSair {
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#btnSair:hover {
+  background-color: rgb(37, 37, 36);
+}
+
+/*Página Notícias*/
+/* Definindo as cores */
+
+/*campo comentário*/

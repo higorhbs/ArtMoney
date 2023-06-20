@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ArtMoney - CotarMoedas</title>
+    <style>
+       
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/cotarMoedas.css">
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <a href="./index.html" class="header-title"><img src=".\img\logoV1.png" alt="LogoArtMoney"
+                    class="header-title"></a>
+            <ul class="navigation-list">
+                
+                <li><a class="button button--black button--nav" href="./investimentos.html">Investimentos</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="./calculadora.html">Calculadora
+                        Financeira</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="podcasts.html">Podcasts</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="noticias.html">Notícias</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="./quemsomos.html">Quem Somos</a></li>
+               
+            </ul>
+           
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Cotação de Moedas</h1>
+        <div class="form">
+            <input type="number" id="amount" placeholder="Valor">
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <option value="BRL">BRL</option>
+            </select>
+            <select id="toCurrency">
+                <option value="BRL">BRL</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <option value="USD">USD</option>
+            </select>
+            <button class="buttonConverter" onclick="convertCurrency()">Converter</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <script>
+        // Função para converter a moeda
+        function convertCurrency() {
+
+            let amount = document.getElementById("amount").value;
+
+            let fromCurrency = document.getElementById("fromCurrency").value;
+
+            let toCurrency = document.getElementById("toCurrency").value;
+
+            // Fazer a requisição à API de cotação de moedas
+            let xhr = new XMLHttpRequest();
+
+            xhr.open("GET", `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`);
+
+            xhr.onload = function () {
+
+                if (xhr.status === 200) {
+
+                    let response = JSON.parse(xhr.responseText);
+
+                    let exchangeRate = response.rates[toCurrency];
+
+                    let convertedAmount = amount * exchangeRate;
+
+                    document.getElementById("result").innerText = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
+
+                } else {
+
+                    document.getElementById("result").innerText = "Erro ao converter moeda.";
+
+                }
+
+            };
+
+            xhr.send();
+
+        }
+
+    </script>
+    <footer>
+        <div class="rodape">
+          <div class="midias">
+            <img src="img/Facebook.png" alt="Facebook.png">
+            <img src="img/ig.png" alt="instagram icnone">
+            <p class="Copyright"> © Copyright 2023 - ArtMoney - Todos os direitos reservados </p>
+          </div>
+        </div>
+      </footer>
+</body>
+
+
+
+</html>

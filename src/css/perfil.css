@@ -1,0 +1,31 @@
+.main-content {
+  justify-content: center;
+  align-items: center;
+  margin: 20px 200px;
+  align-items: left;
+}
+.main-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questionario{
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btnValidar{
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}

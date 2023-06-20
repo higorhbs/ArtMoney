@@ -1,0 +1,45 @@
+.container {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 60vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form input[type="number"] {
+    width: 100px;
+    padding: 5px;
+}
+
+.form select {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+
+}
+.buttonConverter{
+    margin: 10px;
+}
+
+.rodape{
+    position: fixed;
+}

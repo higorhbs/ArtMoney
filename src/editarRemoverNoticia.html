@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="./css/base.css">
+<body> 
+    <header class="header">
+        <nav class="navigation">
+            <a href="./index.html" class="header-title"><img src=".\img\logoV1.png" alt="LogoArtMoney"
+                    class="header-title"></a>
+            <ul class="navigation-list">
+                <li><a class="button button--black button--nav" href="./investimentos.html">Investimentos</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="./cotarMoedas.html">Cotar
+                        Moedas</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="./calculadora.html">Calculadora
+                        Financeira</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="podcasts.html">Podcasts</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="noticias.html">Notícias</a></li>
+                <li><a class="button button--black button--nav u-hideOnMobile" href="./quemsomos.html">Quem Somos</a>
+                </li>
+                <li><a class="button--login button" id="button--login" href="./login.html">Entrar</a></a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <head>
+
+        <title>Editar ou Remover Noticias</title>
+        <link rel="stylesheet" type="text/css" href="./css/editarRemoverNoticia.css">
+        <style>
+            /* Some basic CSS styles for the page layout */
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            .noticias-container {
+                margin-bottom: 20px;
+            }
+
+            .noticias-container input[type="text"],
+            .noticias-container button {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <h1>Editar ou Remover Noticias</h1>
+    <div id="noticiaEmEdicao"></div>
+    <div id="editForm"></div>
+
+
+    <!-- Container for displaying noticias -->
+    <div id="noticiasContainer" class="noticias-container">
+        <!-- Noticias will be dynamically added here -->
+    </div>
+
+    <!-- Form for adding new noticias -->
+
+
+    <script src="./js/editarRemoverNoticia.js"></script>
+</body>
+
+</html>

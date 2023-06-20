@@ -1,0 +1,100 @@
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+form {
+	width: 50%;
+	margin: 0 auto;
+}
+
+label {
+	display: block;
+	margin-top: 20px;
+}
+
+input[type="text"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+button[type="submit"] {
+	display: block;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #000000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#comment-section {
+	margin-top: 50px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.comment {
+	background-color: #f2f2f2;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.comment-box {
+	width: 80%;
+	margin: 0 auto;
+  }
+  
+  h3 {
+	text-align: center;
+  }
+  
+  .form1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  label {
+	margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	width: 30%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #9d9b9b;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+  
+  .btcm[type="submit"] {
+	background-color: #000000;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .btcm[type="submit"]:hover {
+	background-color: #898989;
+  }
+  
+  .comment {
+	background-color: #f2f2f2;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 4px;
+  }
+  .comment-section{
+	font-size: 25px;
+  }
+  
